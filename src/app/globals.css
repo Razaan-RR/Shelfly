@@ -1,19 +1,24 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #f9fafb;
   --foreground: #1e293b;
 
   --primary: #93c5fd;
   --secondary: #c4b5fd;
   --accent: #a5f3fc;
 
+  --hero-bg: linear-gradient(
+    135deg,
+    #e0f2fe 0%,
+    #ede9fe 50%,
+    #ecfeff 100%
+  );
+
   --font-sans: 'Inter', Arial, Helvetica, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 @theme inline {
-  --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
@@ -21,18 +26,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #020617;
     --foreground: #f8fafc;
+
+    --hero-bg: linear-gradient(
+      135deg,
+      #0f172a 0%,
+      #1e1b4b 50%,
+      #020617 100%
+    );
   }
 }
 
+html,
 body {
-  background: var(--background);
+  background: var(--hero-bg);
   color: var(--foreground);
   font-family: var(--font-sans);
-  min-height: 100vh;
+  min-height: 100%;
 }
 
+/* Theme utility classes */
 .bg-primary {
   background-color: var(--primary);
 }
