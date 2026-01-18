@@ -1,12 +1,13 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #f3f4f6; /* main background */
-  --foreground: #171717; /* default text color */
-  --primary: #6366f1; /* Indigo 500 */
-  --secondary: #8b5cf6; /* Purple 500 */
-  --glass: rgba(255, 255, 255, 0.1);
-  --glass-dark: rgba(0, 0, 0, 0.2);
+  --background: #f9fafb;
+  --foreground: #1e293b;
+
+  --primary: #93c5fd;
+  --secondary: #c4b5fd;
+  --accent: #a5f3fc;
+
   --font-sans: 'Inter', Arial, Helvetica, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
@@ -20,9 +21,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --glass-dark: rgba(255, 255, 255, 0.1);
+    --background: #020617;
+    --foreground: #f8fafc;
   }
 }
 
@@ -33,7 +33,6 @@ body {
   min-height: 100vh;
 }
 
-/* Default Tailwind overrides using theme colors */
 .bg-primary {
   background-color: var(--primary);
 }
@@ -48,9 +47,9 @@ body {
   color: var(--secondary);
 }
 
-.bg-glass {
-  background-color: var(--glass);
+.bg-accent {
+  background-color: var(--accent);
 }
-.bg-glass-dark {
-  background-color: var(--glass-dark);
+.text-accent {
+  color: var(--accent);
 }
