@@ -10,7 +10,7 @@ export default function ItemDetailsPage() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/items`)
+    fetch('/data/items.json')
       .then((res) => res.json())
       .then((data) => {
         const foundItem = data.find((i) => i.id.toString() === id)
