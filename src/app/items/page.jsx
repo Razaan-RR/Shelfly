@@ -8,7 +8,7 @@ export default function ItemsPage() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/items')
+    fetch('/data/items.json')
       .then(res => res.json())
       .then(data => {
         setItems(data)
@@ -79,12 +79,8 @@ export default function ItemsPage() {
                     <h3 className="text-xl sm:text-2xl font-bold mb-1">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-white/90 mb-2">
-                      {item.author}
-                    </p>
-                    <span className="text-lg font-semibold">
-                      ${item.price}
-                    </span>
+                    <p className="text-sm text-white/90 mb-2">{item.author}</p>
+                    <span className="text-lg font-semibold">${item.price}</span>
                   </div>
                 </Link>
               </motion.div>
