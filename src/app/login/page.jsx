@@ -70,12 +70,6 @@ export default function LoginPage() {
         >
           Login
         </button>
-
-        <p className="text-sm text-gray-500 text-center z-10 relative">
-          Demo account: <br />
-          <span className="font-medium">Email:</span> demo@shelfly.com <br />
-          <span className="font-medium">Password:</span> demo1234
-        </p>
       </motion.form>
     </section>
   )

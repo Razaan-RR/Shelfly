@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shelfly
 
-## Getting Started
+## Project Description
+Shelfly is a modern, responsive web application built with Next.js and Firebase that allows users to explore and browse curated items/books. It features smooth animations, a beautiful UI, and Firebase Authentication for login. Users can view items and navigate seamlessly between pages.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Route Summary
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Route         | Description                                | Auth Required |
+| ------------- | ------------------------------------------ | ------------- |
+| `/`           | Landing page with hero, features, steps, testimonials, FAQ, CTA | No            |
+| `/login`      | Login page using Firebase Auth             | No            |
+| `/items`      | Browse all items                            | No            |
+| `/items/[id]` | Item detail page                             | No            |
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Implemented Features
 
-## Learn More
+- **Responsive Navbar:** Fixed top, collapsible on mobile, shows user icon when logged in.  
+- **Hero Section:** Engaging landing section with title, subtitle, and CTA.  
+- **Features Section:** Highlights app features with animations.  
+- **Steps Section:** Interactive steps on how Shelfly works.  
+- **Testimonials Section:** Animated testimonials with background shapes.  
+- **FAQ Section:** Accordion-style frequently asked questions.  
+- **Items Page:** Displays a grid of items/cards with images, names, descriptions, and prices.  
+- **Item Details Page:** Dynamic route for each item with full details.  
+- **Firebase Authentication:** Email/password login with real-time UI changes and logout.  
+- **Animations:** Smooth animations using Framer Motion throughout the site.  
+- **Mobile-first Design:** Fully responsive and visually appealing.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Brief Feature Explanation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Authentication:** Users log in with Firebase Auth; logged-in users see a profile icon with logout option.  
+- **Items Display:** Items are displayed with hover effects, dynamic scaling, and smooth transitions.  
+- **Responsive Layout:** All sections are designed to look good on mobile, tablet, and desktop.  
+- **Dynamic Routes:** Clicking on an item navigates to a dynamic page showing full item details.  
+- **Reusable Components:** Sections like Hero, Steps, Testimonials, and FAQ are built as reusable components.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16 (App Router)  
+- React 18  
+- Tailwind CSS  
+- Framer Motion (Animations)  
+- Firebase Authentication  
+- React Icons  
+
+---
+
+## Demo Login
+
+Use these credentials for testing:
+
+- Email: `demo@shelfly.com`  
+- Password: `demo1234`  
+
+---
+
